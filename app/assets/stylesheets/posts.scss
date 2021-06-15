@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@-ms-viewport {width: device-width;}
+
+html {
+  font-size:62.5%;
+}
+body {
+  background-color: white ;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family:'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+  text-align: center;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+ font-weight: normal;
+ text-align: center;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-right: 5px;
+  text-align: center;
+
+}
+
+li {
+  list-style: none;
+  float: left;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  text-align: center;
+
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  text-align: center;
+}
+
+header {
+  font-weight: bold;
+  font-size: 3rem;
+  padding :20px;
+  background-color: #eee;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.tweet {
+  border: solid 1px #eee;
+  width: 50%;
+  font-size: 2rem;
+  word-break: break-all;
+  text-align: center;
+}
+
+.content {
+  min-height: 50px;
+  text-align: left;
+  padding: 5px;
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  &.field {
+    font-size: 1.2rem;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size:1.4rem;
+    margin: -7px -7px 0;
+    background-color: #c00;
+    color: #fff;
+    text-align: center;
+  }
+
+  ul li {
+    list-style: square;
+  }
+}
+
+label {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

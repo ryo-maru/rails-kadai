@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>POsts | <%= yield(:title) %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+  </head>
+
+  <body>
+    <header>
+      <div><%= link_to 'Posts', posts_path %></div>
+    </header>
+    <div class="wrapper">
+      <div class="container">
+        <%= yield %>
+      </div>
+      <footer>
+        <small>&copy;2020 Micchan.</small>
+      </footer>
+    </div>
+  </body>
+</html>
