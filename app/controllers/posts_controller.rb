@@ -14,7 +14,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     if params[:back]
       render :new
-    else
+  else
     if @post.save
     redirect_to posts_path,notice: "つぶやきを作成しました！"
   else
